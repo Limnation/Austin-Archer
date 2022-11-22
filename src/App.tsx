@@ -1,12 +1,11 @@
 import { Header } from './lib/Header/header'
+import { Button } from './lib/Button/button'
 
 const App = () => {
   return (
     <>
       <Header />
-      <div className="App">
-        Hello World
-      </div>
+      <Button />
     </>
   );
 }

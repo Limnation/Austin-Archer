@@ -1,11 +1,11 @@
-import { StyledHeader } from '../Header/header.styled';
+import { StyledButton } from '../Button/button.styled';
 
-interface HeaderProp { }
+interface ButtonProp { }
 
-const Header = ({ }: HeaderProp) => {
+const Button = ({ }: ButtonProp) => {
     return (
-        <StyledHeader>Cats are Cool</StyledHeader>
+        <StyledButton>Shop</StyledButton>
     );
 } 
 
-export { Header };
+export { Button };
