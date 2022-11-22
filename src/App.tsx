@@ -1,8 +1,13 @@
+import { Header } from './lib/Header/header'
+
 const App = () => {
   return (
-    <div className="App">
-      Hello World
-    </div>
+    <>
+      <Header />
+      <div className="App">
+        Hello World
+      </div>
+    </>
   );
 }
 
