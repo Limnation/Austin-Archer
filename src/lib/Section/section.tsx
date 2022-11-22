@@ -1,10 +1,10 @@
-import { StyledSection } from './Section.styled'
+import { StyledSection } from './section.styled';
 
-interface SectionProp { }
+interface HeaderProp { }
 
-const Section = ({ }: SectionProp) => {
+const Section = ({ }: HeaderProp) => {
     return (
-        <StyledSection>Shop</StyledSection>
+        <StyledSection>Cats are Cool</StyledSection>
     );
 } 
 
