@@ -1,4 +1,4 @@
-import { StyledBox } from '../Box/box.styled';
+import { StyledBox } from './box.styled';
 
 interface BoxProp { }
 

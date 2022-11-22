@@ -1,4 +1,4 @@
-import { StyledHeader } from '../Header/header.styled';
+import { StyledHeader } from './header.styled';
 
 interface HeaderProp { }
 

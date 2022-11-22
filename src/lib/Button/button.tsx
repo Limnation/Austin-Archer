@@ -1,4 +1,4 @@
-import { StyledButton } from '../Button/button.styled';
+import { StyledButton } from './button.styled';
 
 interface ButtonProp { }
 
