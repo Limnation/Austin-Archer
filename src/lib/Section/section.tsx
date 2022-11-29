@@ -1,10 +1,18 @@
 import { StyledSection } from './section.styled';
 
-interface HeaderProp { }
+interface HeaderProp { 
+    children?: React.ReactNode;
+    theme?: object;
+}
 
-const Section = ({ }: HeaderProp) => {
+const defaultTheme = {
+    color: "mediumseagreen",
+    backgroundImage: "url(/img/background.png)"
+  };
+
+const Section = ({ children, theme }: HeaderProp) => {
     return (
-        <StyledSection>Cats are Cool</StyledSection>
+        <StyledSection theme={ theme ? theme : defaultTheme }>{children}</StyledSection>
     );
 } 
 
