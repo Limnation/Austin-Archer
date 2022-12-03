@@ -1,10 +1,16 @@
 import { StyledButton } from './button.styled';
 
-interface ButtonProp { }
+interface ButtonProp { 
+    onClick?: any;
+    theme?: object;
+}
 
-const Button = ({ }: ButtonProp) => {
+const defaultTheme = {
+};
+
+const Button = ({ onClick, theme }: ButtonProp) => {
     return (
-        <StyledButton>Shop</StyledButton>
+        <StyledButton onClick={onClick} theme={ theme ? theme : defaultTheme }>Shop</StyledButton>
     );
 } 
 

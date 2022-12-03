@@ -6,8 +6,6 @@ interface HeaderProp {
 }
 
 const defaultTheme = {
-    color: "mediumseagreen",
-    backgroundImage: "url(/img/background.png)"
   };
 
 const Section = ({ children, theme }: HeaderProp) => {
