@@ -1,10 +1,15 @@
 import { StyledBox } from './box.styled';
 
-interface BoxProp { }
+interface BoxProp { 
+    children?: React.ReactNode;
+    theme?: object;
+}
 
-const Box = ({ }: BoxProp) => {
+const defaultTheme = {};
+
+const Box = ({ children, theme }: BoxProp) => {
     return (
-        <StyledBox>Shop</StyledBox>
+        <StyledBox theme={ theme ? theme : defaultTheme }>{children}</StyledBox>
     );
 } 
 
