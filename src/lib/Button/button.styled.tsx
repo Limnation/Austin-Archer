@@ -10,7 +10,7 @@ interface ButtonInterface {
 };
 
 const StyledButton = styled.div<ButtonInterface>`
-    color: ${props => props.theme.color || "#ffffff"};
+    color: ${props => props.theme.color || "#000000"};
     background: ${props => props.theme.background || "#FFFFFFB3 0% 0% no-repeat padding-box"};
     text-transform: ${props => props.theme.textTransform || "upercase"};
     display: ${props => props.theme.display || "flex"};
