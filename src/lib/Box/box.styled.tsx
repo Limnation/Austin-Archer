@@ -7,9 +7,9 @@ interface BoxInterface {
 };
 
 const StyledBox = styled.div<BoxInterface>`
-    color: ${props => props.color || "#ffffff"};
-    background: ${props => props.background || "transparent "};
-    text-transform: ${props => props.textTransform || "upercase"};
+    color: ${props => props.theme.color || "#ffffff"};
+    background: ${props => props.theme.background || "transparent "};
+    text-transform: ${props => props.theme.textTransform || "upercase"};
 `;
 
 export { StyledBox };

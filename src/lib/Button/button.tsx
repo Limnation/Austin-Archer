@@ -5,8 +5,7 @@ interface ButtonProp {
     theme?: object;
 }
 
-const defaultTheme = {
-};
+const defaultTheme = {};
 
 const Button = ({ onClick, theme }: ButtonProp) => {
     return (

@@ -1,10 +1,18 @@
 import { StyledText } from './text.styled';
 
-interface TextProp { }
+interface TextProp { 
+    onClick?: any;
+    theme?: object;
+    text?: string;
+}
 
-const Text = ({ }: TextProp) => {
+const defaultTheme = {
+    color: "#ffffff"
+ };
+
+const Text = ({ text, theme }: TextProp) => {
     return (
-        <StyledText>Shop</StyledText>
+        <StyledText theme={ theme ? theme : defaultTheme }>{text}</StyledText>
     );
 } 
 

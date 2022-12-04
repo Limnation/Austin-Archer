@@ -7,12 +7,12 @@ interface SectionInterface {
  };
 
 const StyledSection = styled.section<SectionInterface>`
-    color: #e113da;
-    background-color: ${props => props.theme.color || "palevioletred"};
+    color: ${props => props.theme.color || "#ffffff"};
+    background-color: ${props => props.theme.backgroundColor || "transparent"};
     background-image: ${props => props.theme.backgroundImage || `url(${backgroundImageX2})`};
     width: ${ props => props.theme.width || "100vw" };
     height: ${ props => props.theme.height || "100vh" };
-    background-size: cover;
+    background-size: ${ props => props.theme.backgroundSize || "cover"};
 `;
 
 export { StyledSection };

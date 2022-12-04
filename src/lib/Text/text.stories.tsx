@@ -9,4 +9,4 @@ export default {
 const Template: ComponentStory<typeof Text> = (args) => <Text {...args} />;
 
 export const Primary = Template.bind({});
-Primary.args = { color: 'red', background: 'transparent' }
+Primary.args = {}

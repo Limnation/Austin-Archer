@@ -1,10 +1,17 @@
 import { StyledHeader } from './header.styled';
 
-interface HeaderProp { }
+interface HeaderProp { 
+    text?: string;
+    theme?: object;
+}
 
-const Header = ({ }: HeaderProp) => {
+const defaultTheme = {
+    color: "#ffffff"
+ };
+
+const Header = ({ text, theme }: HeaderProp) => {
     return (
-        <StyledHeader>Cats are Cool</StyledHeader>
+        <StyledHeader theme={ theme ? theme : defaultTheme }>{text}</StyledHeader>
     );
 } 
 

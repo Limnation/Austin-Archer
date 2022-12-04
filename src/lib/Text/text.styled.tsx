@@ -7,9 +7,10 @@ interface TextInterface {
 };
 
 const StyledText = styled.p<TextInterface>`
-    color: ${props => props.color || "#ffffff"};
-    background: ${props => props.background || "transparent "};
-    text-transform: ${props => props.textTransform || "upercase"};
+    color: ${props => props.theme.color || "#ffffff"};
+    background: ${props => props.theme.background || "transparent "};
+    text-transform: ${props => props.theme.textTransform || "upercase"};
+    font-size: ${props => props.theme.fontSize || "18px"}; 
 `;
 
 export { StyledText };
