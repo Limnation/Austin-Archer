@@ -4,6 +4,7 @@ interface TextInterface {
     color?: string;
     background?: string;
     textTransform?: string;
+    fontSize?: string;
 };
 
 const StyledText = styled.p<TextInterface>`
