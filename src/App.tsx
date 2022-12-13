@@ -1,8 +1,13 @@
+import { Header } from './lib/Header/header'
+import { Button } from './lib/Button/button'
+import { Section } from './lib/Section/section';
+
 const App = () => {
   return (
-    <div className="App">
-      Hello World
-    </div>
+    <Section>
+      <Header />
+      <Button />
+    </Section>
   );
 }
 
