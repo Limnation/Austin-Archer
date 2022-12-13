@@ -1,13 +1,8 @@
-import { Header } from './lib/Header/header'
-import { Button } from './lib/Button/button'
-import { Section } from './lib/Section/section';
+import { Landing } from './lib/pages/landing';
 
 const App = () => {
   return (
-    <Section>
-      <Header />
-      <Button />
-    </Section>
+    <Landing/>
   );
 }
 
